@@ -89,6 +89,21 @@ if (media >= 6) {
 } else {
   console.log(`❌ Média: ${media.toFixed(2)} - Aluno REPROVADO.`);
 }
+//Questão 7
+let nome = prompt("Digite seu nome:");
+let idade = prompt("Digite sua idade:");
+let curso = prompt("Digite o nome do curso:");
+let ano = prompt("Digite o ano atual:");
+
+let infoDiv = document.getElementById("info");
+
+infoDiv.innerHTML = `
+  <p><strong>Nome:</strong> ${nome}</p>
+  <p><strong>Idade:</strong> ${idade}</p>
+  <p><strong>Curso:</strong> ${curso}</p>
+  <p><strong>Ano:</strong> ${ano}</p>
+`;
+
 
   
 
