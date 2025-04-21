@@ -55,6 +55,10 @@ switch (faixa) {
   default:
     console.log("Não foi possível calcular sua faixa de IMC.");
 }
-
+//Questão 4
+for (let i = 1; i <= 50; i++) {
+    console.log("Garrafa número " + i + ": O valor é excelente para a nossa vinheria!");
+  }
+  
 
 
