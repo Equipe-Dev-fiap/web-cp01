@@ -74,6 +74,21 @@ if (usuario === usuarioCadastrado && senha === senhaCadastrada) {
 } else {
   console.log("❌ Falha na autenticação. Nome de usuário ou senha incorretos.");
 }
+//Questão 6
+let soma = 0;
+let quantidadeNotas = 7;
+for (let i = 1; i <= quantidadeNotas; i++) {
+  let nota = parseFloat(prompt(`Digite a nota ${i}:`));
+  soma += nota;
+}
+
+let media = soma / quantidadeNotas;
+
+if (media >= 6) {
+  console.log(`✅ Média: ${media.toFixed(2)} - Aluno APROVADO!`);
+} else {
+  console.log(`❌ Média: ${media.toFixed(2)} - Aluno REPROVADO.`);
+}
 
   
 
