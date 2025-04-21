@@ -123,6 +123,22 @@ console.log("Última posição de 'ia':", ultimaIa);
 console.log("Posição da palavra 'ciência':", posCiencia);
 console.log("Posição da palavra 'métodos':", posMetodos);
 
+//Questão 9
+// Pede ao usuário para digitar um valor
+let valor = prompt("Digite um número com vírgula ou ponto (ex: 12.5):");
+
+// Exibe o valor original e seu tipo
+console.log("Valor digitado:", valor);
+console.log("Tipo original:", typeof valor); // string
+
+// Converte para float
+let valorConvertido = parseFloat(valor);
+
+
+console.log("Valor convertido para float:", valorConvertido);
+console.log("Tipo após conversão:", typeof valorConvertido); // number
+
+
 
 
 
