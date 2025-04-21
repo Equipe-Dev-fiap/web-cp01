@@ -103,6 +103,27 @@ infoDiv.innerHTML = `
   <p><strong>Curso:</strong> ${curso}</p>
   <p><strong>Ano:</strong> ${ano}</p>
 `;
+//Questão 8
+let texto = "Tecnologia é um produto da ciência e da engenharia que envolve um conjunto de instrumentos, métodos e técnicas que visam a resolução de problemas.";
+
+// 1) Buscar a primeira posição de “em”
+let primeiraEm = texto.indexOf("em");
+
+// 2) Buscar a última posição de “ia”
+let ultimaIa = texto.lastIndexOf("ia");
+
+// 3) Buscar a palavra “ciência”
+let posCiencia = texto.indexOf("ciência");
+
+// 4) Buscar a palavra “métodos”
+let posMetodos = texto.indexOf("métodos");
+
+console.log("Primeira posição de 'em':", primeiraEm);
+console.log("Última posição de 'ia':", ultimaIa);
+console.log("Posição da palavra 'ciência':", posCiencia);
+console.log("Posição da palavra 'métodos':", posMetodos);
+
+
 
 
   
