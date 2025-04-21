@@ -59,6 +59,22 @@ switch (faixa) {
 for (let i = 1; i <= 50; i++) {
     console.log("Garrafa número " + i + ": O valor é excelente para a nossa vinheria!");
   }
+//Questão 5
+// Dados cadastrados (usuário da vinheria)
+const usuarioCadastrado = "admin";
+const senhaCadastrada = "1234";
+
+// Entrada do usuário
+let usuario = prompt("Digite seu nome de usuário: ");
+let senha = prompt("Digite sua senha: ");
+
+// Verificação de login
+if (usuario === usuarioCadastrado && senha === senhaCadastrada) {
+  console.log("✅ Login realizado com sucesso! Bem-vindo à Vinheria.");
+} else {
+  console.log("❌ Falha na autenticação. Nome de usuário ou senha incorretos.");
+}
+
   
 
 
