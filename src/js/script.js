@@ -22,5 +22,39 @@ console.log("Resultados:\n" +
   "O vinho NÃO é branco? " + naoEhBranco + "\n" +
   "O cliente pode comprar vinho? (idade >= 18): " + podeComprar);
 
+//Questão 3
+// Coleta de dados
+let peso = parseFloat(prompt("Digite seu peso (kg):"));
+let altura = parseFloat(prompt("Digite sua altura (em metros):"));
+
+// Cálculo do IMC
+let imc = peso / (altura * altura);
+
+// Determinação da faixa por categoria (classificada por código)
+let faixa = "";
+
+if (imc < 18.5) {
+  faixa = "abaixo";
+} else if (imc >= 18.5 && imc <= 24.9) {
+  faixa = "ideal";
+} else {
+  faixa = "acima";
+}
+
+// Switch case para mensagem baseada na faixa
+switch (faixa) {
+  case "abaixo":
+    console.log("Seu IMC é " + imc.toFixed(2) + ". Você está abaixo do peso.");
+    break;
+  case "ideal":
+    console.log("Seu IMC é " + imc.toFixed(2) + ". Você está no peso ideal.");
+    break;
+  case "acima":
+    console.log("Seu IMC é " + imc.toFixed(2) + ". Você está acima do peso.");
+    break;
+  default:
+    console.log("Não foi possível calcular sua faixa de IMC.");
+}
+
 
 
